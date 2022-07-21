@@ -1,6 +1,6 @@
 .banner{
     background-image: url("..//img/muggato.jpg");
-    padding: 20% 30% 25% 20%;
+    padding: 30% 30% 30% 30%;
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -23,5 +23,4 @@
     font-family: 'Delius', cursive;
     font-family: 'Just Another Hand', cursive;
     font-family: 'Kalam', cursive;
-    color:white;
 }
