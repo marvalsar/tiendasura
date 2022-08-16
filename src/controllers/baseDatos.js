@@ -16,14 +16,14 @@ let productos=[
         descripcion:"Camiseta sublimada hombre, en tela piel de durazno, fresca y durable."
     },
     {
-        nombre:"",
-        fotos:[],
-        precio:0,
-        popularidad:0,
-        descripcion:""
+        nombre:"CAMISETA GIR POWER",
+        fotos:["https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/CAMISETA%20GIRL%20POWER.jpg?alt=media&token=a1b91942-3c42-4036-8fae-dc05cb3884dc"],
+        precio:30000,
+        popularidad:5,
+        descripcion:"Camiseta para mujer, tela suave"
     },
     {
-        nombre:"",
+        nombre:"EMPAQUE CAMISEA",
         fotos:[],
         precio:0,
         popularidad:0,
