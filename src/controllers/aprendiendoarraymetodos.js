@@ -1,5 +1,3 @@
-//QUEMAR (HARD CORE) LA BASE DE DATOS
-
 let productos=[
     {
         nombre:"MUG PERSONALIZADO",
@@ -72,3 +70,56 @@ let productos=[
         descripcion:"Mug personalizado"
     }
 ]
+let fila=document.getElementById("fila")
+//recorriendo el arreglo
+
+productos.forEach(function(producto){
+   //creando un div desde js
+   let columna=document.createElement("div")
+   columna.classList.add("col")
+   //creando una tarjeta
+   let tarjeta=document.createElement("div")
+   tarjeta.classList.add("card","shadow","text-center","h-100","p-5")
+   //creando una imagen
+   let imagen=document.createElement("img")
+   imagen.classList.add("img-fluid","w-100")
+   imagen.src=producto.fotos[0,1]
+
+      //detectando evento de mause
+   imagen.addEventListener("mouseover",function(){
+    imagen.src=producto.fotos[1]
+       })
+    imagen.addEventListener("mouseleave",function(){
+        imagen.src=producto.fotos[0]
+    })
+   //crear el nombre
+   let nombre=document.createElement("h3")
+   nombre.classList.add("fw-bold")
+   nombre.textContent=producto.nombre
+   //crear precio
+   let precio=document.createElement("h2")
+   precio.classList.add("text-dark")
+   precio.textContent="$"+producto.precio
+
+   let popularidad=document.createElement("h4")
+   popularidad.classList.add("text-dark","d-none")
+   popularidad.textContent=producto.popularidad
+   
+   let descripcion=document.createElement("h5")
+   descripcion.classList.add("text-dark","d-none")
+   descripcion.textContent=producto.descripcion
+ 
+
+    //definiendo padres e hijos
+    tarjeta.appendChild(imagen)
+    tarjeta.appendChild(nombre)
+    tarjeta.appendChild(precio)
+    /*tarjeta.appendChild(calificacion)*/
+    tarjeta.appendChild(popularidad)
+    tarjeta.appendChild(descripcion)
+    columna.appendChild(tarjeta)
+    fila.appendChild(columna)
+
+
+
+})
