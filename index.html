@@ -22,77 +22,89 @@
 <body class="fuente">
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark animate__animated animate__rubberBand">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">LUNA MAGICA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/pngwing.com.png?alt=media&token=bc945079-8e1c-441e-b361-f908c00dd432" class="nav-link dropdown-toggle img-fluid" height="80px" width="80px" href="#"
-                id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
-              <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                <table id="lista-carrito" class="table">
-                  <thead>
-                    <tr>
-                      <th>Imagen</th>
-                      <th>Nombre</th>
-                      <th>Precio</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody></tbody>
-                </table>
-
-                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
-                  Compra</a>
-              </div>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg bg-white navbar-white fixed-top"> 
+        <div class="container-fluid">
+            <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/LOGO%20LM.png?alt=media&token=22d0e143-7b17-4a8d-b4b5-7067cfffbb45 " alt="" class="img-fluid w-40">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-2" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2" href="./src/views/tienda.html">Our products</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="bi bi-cart4 fs-2"></i>
+                            <span
+                                class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger"
+                                id="pildora">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
-  </header>
+</header>
   <main>
     <section class="banner text-white">
       <h1>STORE LUNA MAGICA MEDELLIN</h1>
     </section>
+    <div id="carouselExampleControls" class="mt-4 mb-4 container container- fluid carousel slide"
+        data-bs-ride="carousel">
+        <div id="UNIVERSOS" class="carousel-inner">
+            <h1 class="text-center text-danger">Garments to print<h1>
+                    <div class="carousel-item active">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/WhatsApp%20Image%202022-08-21%20at%2010.29.25%20PM.jpeg?alt=media&token=3268a30c-952f-4297-9938-12c94c659ab9" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-white">Hoodies</h2>
+                            <p class="fs-2 text-white">Create your designs and we print them</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/WhatsApp%20Image%202022-08-21%20at%2010.30.03%20PM.jpeg?alt=media&token=82d26ba8-e2f9-401a-9bf8-bee4523693da" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-warning">Joggers</h2>
+                            <p class="fs-2 text-warning ">Create your designs and we print them</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/WhatsApp%20Image%202022-08-21%20at%2010.40.39%20PM.jpeg?alt=media&token=54ee3870-b054-4670-a345-71ec929a7bbc" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-white">Crop Tops</h2>
+                            <p class="fs-2 text-white ">Create your designs and we print them</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+        </div>
+    </div>
     <section>
       <div class="container mt-5">
         <div class="row">
           <div class="col-12 col-md-8">
-            <img src="./assets/img/MUG FLORES.jpg" alt="" class="img-fluid w-100">
+            <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/azul1.webp?alt=media&token=1fa7bdeb-3cb6-4647-a988-6df6b3a371dc" alt="" class="img-fluid w-100">
           </div>
           <div class="col-12 col-md-4 align-self-center">
-            <h3>WELCOME</h3>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Tempore consequuntur consequatur adipisci soluta quo esse ea,
-              blanditiis vero alias nesciunt, atque nisi quisquam mollitia
-              harum accusamus! Quis voluptatibus consequatur magnam.</P>
+            <h2>WELCOME</h2>
+            <h3>We are a family that makes it possible for our clients to express themselves through fashion and design, 
+              that is why we put our knowledge in printing at your disposal and make your designs a reality.</h3>
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"><i class="bi bi-box-arrow-in-right me-2"></i>Sing up</button>
           </div>
@@ -130,11 +142,14 @@
 
 
 
+  <script src="../controllers/aprendiendoarraymetodos.js"></script>
+  <script src="../controllers/ampliarinformacion.js"></script>
   <!-- JavaScript Bundle with Popper -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

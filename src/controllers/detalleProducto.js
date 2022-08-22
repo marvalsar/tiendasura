@@ -2,6 +2,19 @@ console.log("hola estoy detallando la compra")
 //llamar a la memoria
 let producto = JSON.parse(localStorage.getItem("producto"))
 console.log(producto)
+
+let carrito
+if(JSON.parse(localStorage.getItem("carrito"))!=null){
+    carrito=JSON.parse(localStorage.getItem("carrito"))
+    let pildora = document.getElementById("pildora")
+    pildora.textContent=carrito.length
+}else{
+    carrito=[]
+}
+
+let carritoMemoria=JSON.parse(localStorage.getItem("carrito"))
+console.log(carritoMemoria)
+
 //referenciar la imagen del producto
 let foto = document.getElementById("imagenInfo")
 foto.src = producto.foto
@@ -15,37 +28,45 @@ precio.textContent = producto.precio
 let descripcion = document.getElementById("descripcionInfo")
 descripcion.textContent = producto.descripcion
 
+let popularidad= localStorage.getItem("contador")
+producto.popularidad=popularidad
+
 let pildora = document.getElementById("pildora")
-pildora.textContent = producto.pildora
+console.log(pildora.textContent) 
+
 
 //Escuchar el click en el boton  Añadir carrito 
 
-let botonAgregarCarrito = document.getElementById("botonAgregarCarrito")
+let botonCarrito = document.getElementById("botonAgregarCarrito")
 botonCarrito.addEventListener("click",function(evento){
 
-    let cantidad = document.getElementById("cantidadProductos")
+    let cantidad = document.getElementById("cantidadProducto")
     cantidad = cantidad.value
-    console.log("agregaste: " + cantidad)
+   
+    //agregamos la cantidad al objeto producto
 
+    producto.cantidad=cantidad
+    console.log(producto)
+
+    //agregamos el producto al carrito de compras
+
+    carrito.push(producto)
+    console.log(carrito)
+
+    //agregando el carrito a la memoria
+    localStorage.setItem("carrito",JSON.stringify(carrito))
+
+    //pintando la pildora con la cantidad de producto
+    let cantidadCarrito=carrito.length
+    pildora.textContent=cantidadCarrito
 })
 
 
 
-//let carrito=document.getElementById("")
+
 
  
-// let botoncalificar=document.getElementById("comprar")
-// botoncalificar.addEventListener("click",function(){
     
-//     let popularidad= localStorage.getItem("contador")
-//     producto.popularidad=popularidad
-
-//     let cantidad=document.getElementById("cantidad").value
-//     producto.cantidad=cantidad
-
-//     console.log(producto)
+  
 
 
-   
-
-// })

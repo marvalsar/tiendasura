@@ -1,6 +1,6 @@
 .banner{
-    background-image: url("..//img/muggato.jpg");
-    padding: 30% 30% 30% 30%;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/azul2.webp?alt=media&token=4a90d1d7-1046-4c18-a577-a3227c2d5086");
+    padding: 35% 35% 35% 35%;
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -23,4 +23,7 @@
     font-family: 'Delius', cursive;
     font-family: 'Just Another Hand', cursive;
     font-family: 'Kalam', cursive;
+}
+#cuadros{
+    background-color: lightpink;
 }

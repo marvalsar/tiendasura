@@ -6,21 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- CSS only -->
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Just+Another+Hand&family=Kalam&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="./assets/styles/estilos.css">   
 </head>
-<body>
-    <div class="container">
+<body class="fuente">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white navbar-white fixed-top"> 
+            <div class="container-fluid">
+                <img src="https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/LOGO%20LM.png?alt=media&token=22d0e143-7b17-4a8d-b4b5-7067cfffbb45 " alt="" class="img-fluid w-40">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-2" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2" href="./src/views/tienda.html">Our products</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="bi bi-cart4 fs-2"></i>
+                                <span
+                                    class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger"
+                                    id="pildora">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="cuadros" class="container">
+        <h1 id="texto"></h1>
         <div id="fila"class="row row-cols-1 row-cols-md-3 g-3 ">
-           
         </div>
-  
+        <h2 id="precio" ></h2>
+        <h4 id="popularidad" ></h4>
+        <h4 id="descripcion" ></h4>
     </div>
-    
+     
+        
+        
 
     
-    <script src="../controllers/carrito.js"></script>
-    <script src="../controllers/pedido.js"></script>
+    
     <script src="../controllers/aprendiendoarraymetodos.js"></script>
     <script src="../controllers/ampliarinformacion.js"></script>
     
