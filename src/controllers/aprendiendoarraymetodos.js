@@ -115,6 +115,7 @@ productos.forEach(function(producto){
    precio.classList.add("text-dark")
    precio.textContent="$"+producto.precio
 
+   
    let popularidad=document.createElement("h4")
    popularidad.classList.add("text-dark","d-none")
    popularidad.textContent=producto.popularidad

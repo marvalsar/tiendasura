@@ -17,7 +17,13 @@ console.log(carritoMemoria)
 
 //referenciar la imagen del producto
 let foto = document.getElementById("imagenInfo")
-foto.src = producto.foto
+foto.src = producto.foto1
+
+foto.addEventListener("mouseover",function(){
+    console.log("hooooooola")
+    console.log(producto)
+    foto.src=producto.foto
+})
 
 let nombre = document.getElementById("nombreInfo")
 nombre.textContent = producto.nombre
