@@ -2,6 +2,7 @@ console.log("hola estoy detallando la compra")
 //llamar a la memoria
 let producto = JSON.parse(localStorage.getItem("producto"))
 console.log(producto)
+<<<<<<< HEAD
 
 let carrito
 if(JSON.parse(localStorage.getItem("carrito"))!=null){
@@ -24,6 +25,11 @@ foto.addEventListener("mouseover",function(){
     console.log(producto)
     foto.src=producto.foto
 })
+=======
+//referenciar la imagen del producto
+let foto = document.getElementById("imagenInfo")
+foto.src = producto.foto
+>>>>>>> 5fa34a7a854f1878991f94e1fd37a40037f129c1
 
 let nombre = document.getElementById("nombreInfo")
 nombre.textContent = producto.nombre
@@ -34,6 +40,7 @@ precio.textContent = producto.precio
 let descripcion = document.getElementById("descripcionInfo")
 descripcion.textContent = producto.descripcion
 
+<<<<<<< HEAD
 let popularidad= localStorage.getItem("contador")
 producto.popularidad=popularidad
 
@@ -76,3 +83,7 @@ botonCarrito.addEventListener("click",function(evento){
   
 
 
+=======
+
+ 
+>>>>>>> 5fa34a7a854f1878991f94e1fd37a40037f129c1

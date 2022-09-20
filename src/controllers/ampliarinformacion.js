@@ -9,6 +9,7 @@ contenedorProductos.addEventListener("click",function(evento){
        informacionProducto.foto=(evento.target.parentElement.querySelector("img").src)
        informacionProducto.foto1=(evento.target.parentElement.querySelector("img").src)
        informacionProducto.popularidad=(evento.target.parentElement.querySelector("h4").textContent) 
+       informacionProducto.calificacion=(evento.target.parentElement.querySelector("h3").textContent) 
        
         //guardando un objeto en memoria
        localStorage.setItem("producto",JSON.stringify(informacionProducto))

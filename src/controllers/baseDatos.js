@@ -17,6 +17,7 @@ let productos=[
     },
     {
         nombre:"CAMISETA GIR POWER",
+<<<<<<< HEAD
         fotos:["https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/CAMISETA.jpg?alt=media&token=b70cf86a-d76c-4435-b553-71c812cffb07","https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/CAMISETA%20GIRL%20POWER.jpg?alt=media&token=a1b91942-3c42-4036-8fae-dc05cb3884dc"],
         precio:30000,
         popularidad: 5,
@@ -28,6 +29,19 @@ let productos=[
         precio:30000,
         popularidad: 3,
         descripcion:"Termo personalizado fabricado en aluminio, apto para liquidos calientes y frios."
+=======
+        fotos:["https://firebasestorage.googleapis.com/v0/b/tiendasuralmm.appspot.com/o/CAMISETA%20GIRL%20POWER.jpg?alt=media&token=a1b91942-3c42-4036-8fae-dc05cb3884dc"],
+        precio:30000,
+        popularidad:5,
+        descripcion:"Camiseta para mujer, tela suave"
+    },
+    {
+        nombre:"EMPAQUE CAMISEA",
+        fotos:[],
+        precio:0,
+        popularidad:0,
+        descripcion:""
+>>>>>>> 5fa34a7a854f1878991f94e1fd37a40037f129c1
     },
     {
         nombre:"CAMISETAS PARA PAREJAS",
